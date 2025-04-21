@@ -1,0 +1,22 @@
+spring:
+  config:
+    activate:
+      on-profile: prod
+  #datasuorce
+  datasource:
+    password: wSixuEwxqAkT1HSS
+    username: easymoneysniper
+    url: jdbc:mysql://mysql.sqlpub.com:3306/p_pao_backend
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  #redis
+  redis:
+    database: 0
+    port: 6379
+    host: 114.115.208.175
+    password:
+aliyun:
+  oss:
+    endpoint: oss-cn-beijing.aliyuncs.com
+    accessKeyId: LTAI5tM2d5DkndUuHAmLx2RQ
+    accessKeySecret: Cdq2MRxQURo7oVreQMkDtUiUFfil1u
+    bucketName: pk-p_pao-backend
