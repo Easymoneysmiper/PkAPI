@@ -16,11 +16,7 @@ spring:
     database: 1
     port: 6379
     host: localhost
-#aliyun:
-#  oss:
-#    endpoint: oss-cn-beijing.aliyuncs.com
-#    accessKeyId: LTAI5tM2d5DkndUuHAmLx2RQ
-#    accessKeySecret: Cdq2MRxQURo7oVreQMkDtUiUFfil1u
+
 pkapi:
   client:
     secret-key: bbbccc
