@@ -1,0 +1,25 @@
+server:
+  port: 8091
+spring:
+  cloud:
+    gateway:
+      default-filters:
+        - AddResponseHeader=source,pk
+      routes:
+        - id: api_route
+          uri: http://localhost:8081
+          predicates:
+            - Path= /api/**
+# application.yml
+dubbo:
+  registry:
+    address: nacos://${nacos.address:127.0.0.1}:8848?username=nacos&password=nacos
+    # This will enable application-level service discovery only (the recommended service discovery method for Dubbo3).
+    # For users upgrading from Dubbo2.x, please set the value to 'all' for smooth migration.
+    register-mode: instance
+  protocol:
+    name: tri
+    port: 50051
+  application:
+    name: PkAPI-backend
+    logger: slf4j
