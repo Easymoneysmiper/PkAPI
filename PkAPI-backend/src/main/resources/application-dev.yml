@@ -1,0 +1,24 @@
+spring:
+  config:
+    activate:
+      on-profile: dev
+  application:
+    name: p_pao-backend
+  #datasuorce
+  datasource:
+    password: pkpkpk2005
+    username: root
+    url: jdbc:mysql://localhost:3306/pkapi?serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  #redis
+  redis:
+    password: pkpkpk2005
+    database: 1
+    port: 6379
+    host: localhost
+
+pkapi:
+  client:
+    secret-key: bbbccc
+    access-key: aaabbb
+#    bucketName: pk-p_pao-backend
